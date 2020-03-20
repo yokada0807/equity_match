@@ -1,0 +1,14 @@
+.signUpPage
+  header.header
+    div
+      | アカウントを作成
+  .container
+    = form_for(resource, as: resource_name, url: registration_path(resource_name), html:{ class:"mt-5"}) do |f| 
+    = devise_error_messages!
+    label.rounded-circle.userProfiling[for="file_photo"]
+      .userProfileImg_description
+        | 画像をアップロード
+      i.fas.fa_camera.fa-3x
+      = f.file_field :img_name,id:"file_photo"
+    #userImgPreview.userImgPreview
+      img#thumbnail.userImgPreview_content[accept="image/*" src=""]
