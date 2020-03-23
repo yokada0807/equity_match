@@ -54,6 +54,7 @@ body {
   .userImgPreview {
     margin: 0 auto;
     display: none;
+    // display: block;
     text-align: center;
     &.is-active {
       display: block;
